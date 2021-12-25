@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family:"poppins",sans-serif;
+}
+
+header{
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+container-fluid{
+  position: relative;
+  color: #000;
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: center;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+
+.navbar {
+    width: 100%;
+    background-color: white;
+    overflow: auto;
+  }
+  
+  .navbar a {
+    float: right;
+    text-align: center;
+    color: #0c1753;
+    font-family: Quicksand;
+    font-style: inherit;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    font-size: 17px;
+  }
+  
+
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+    
+    }
+  }
+
+  .logo{
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+    grid-area: hedder;
+  }
+.content{
+  height: 60vh;
+  width: 100%;
+  background-color: #9375ff;
+  margin-top: auto;
+  grid-area: content;
+}
+.flex-container{
+  display: block;
+justify-content: space-between;
+left: 0px;
+top: 0px;
+width: 666px;
+height: 480px;
+padding: 20px;
+float:right;
+  }
+  
+  .flex-container a {
+    width: 100px;
+    margin: 40px;
+    line-height: 75px;
+  
+}
+  .content h3 {
+font-size: medium;
+font-weight: 100;
+margin-top: 24px;
+margin-bottom: 15px;
+color: rgb(250, 248, 248);
+
+  }
+  .content p{
+    font-size: 20px;
+    font-family: Quicksand;
+    color: rgb(255, 254, 254);
+  }
+.content .btn{
+  display: inline-block;
+  background: #ffe101;
+  border-radius: 60px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #00a69c;
+  box-shadow: 3px 8px 22px rgb(94,28,68,0.15);
+}
+
+
+body {
+  background: #f1f1f1 !important
+}
+
+h2 {
+  color: #00A69c;
+  text-align: center;
+}
+
+h3 {
+  color: #00A69C;
+  text-align:center;
+}
+.main-div ul{
+  font-size: 13px;
+}
+#form-div {
+  background-color: #0c1753;
+  color: white;
+  justify-content: space-evenly;
+  padding: 60px;
+}
+
+
+#contact-id {
+  font-size: 25px;
+  font-weight: 500;
+  width: 600px;
+}
+.input-text-form {
+  margin: 10px 0;
+  width: 540px;
+  border-radius: 7px;
+  padding: 15px 30px;
+  font-size: 18px;
+}
+textarea{
+  height: 150px;
+}
+#form-div button{
+  color: #0c1753;
+  margin: 10px 0;
+}
+@media (max-width: 300px) {
+  .title {
+      font-size: 18px
+  }
+}
+
+.row {
+  width: 50%;
+  display: flex;
+  padding: 40
+  px;
+  justify-content: center
+}
+
+@media (max-width: 494px) {
+  .row {
+      flex-direction: column
+  }
+}
+
+.card {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px
+}
+
+.card_img {
+  width: 50px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 9px 30px -6px rgba(204, 194, 54, 0.3);
+  position: relative;
+  transition: transform .4s
+}
+
+.fas,
+.fab {
+  display: inline-block;
+  position: absolute;
+  color: #e9ec0d;
+  transform: translate(-50%, 75%);
+  font-size: 40px
+}
+
+.card_title {
+  font-size: 20px;
+  margin: 12px;
+  font-weight: bold;
+  color: #000000a8;
+  transition: color .2s
+}
+
+.card:hover .card_title {
+  color: #4bd482
+}
+
+.card:hover .card_img {
+  transform: translate(0px, -10px)
+}
+@media only screen and (max-with:1000px){
+  .flex {
+display: flex;
+flex-direction: colum;
+  };
+  #nav-container{
+    height: 100%;
+    flex-direction: row;
+    font-size: 100%;
+  }
+  #nav-container img{
+    width: 40%;
+  }
+  #nav-link{
+    gap: 20%;
+  }
+  #heder-div {
+    width: 100%;
+  }
+  #header-img{
+    width: 100%;
+    margin-top: 30px;
+  }
+  #flex-rev{
+    flex-direction: column;
+  }
+  #contact-id{
+    width: 100%;
+  }
+  .input-text-form{
+    width: 80%;
+  }
+  #fullname, #city{
+    width: 80%;
+    margin-left: 0px;
+  }
+  #footer-div{
+    line-height: 35px;
+    font-size: 15px;
+  }
+  #footer-div img{
+    width: 40%;
+    height: 40%;
+  }
+  #copy-div{
+    font-size: 100%;
+  }
+}
